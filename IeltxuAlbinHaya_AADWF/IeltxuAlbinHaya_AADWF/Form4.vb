@@ -8,7 +8,6 @@ Public Class Form4
     Private Async Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0")
-            client.DefaultRequestHeaders.Authorization = New Headers.AuthenticationHeaderValue("token", My.Settings.githubToken)
 
             Dim respuesta As HttpResponseMessage = Await client.GetAsync(My.Settings.githubAPIString)
             respuesta.EnsureSuccessStatusCode()

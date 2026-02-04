@@ -72,18 +72,6 @@ Namespace My
                 Return CType(Me("githubAPIString"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("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")>  _
-        Public Property githubToken() As String
-            Get
-                Return CType(Me("githubToken"),String)
-            End Get
-            Set
-                Me("githubToken") = value
-            End Set
-        End Property
     End Class
 End Namespace
 
