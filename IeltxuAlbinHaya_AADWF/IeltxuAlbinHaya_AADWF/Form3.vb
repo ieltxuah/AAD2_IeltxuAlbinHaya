@@ -42,4 +42,8 @@ Public Class Form3
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+        Me.Close()
+    End Sub
 End Class

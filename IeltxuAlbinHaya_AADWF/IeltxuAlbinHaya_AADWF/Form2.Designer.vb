@@ -31,6 +31,7 @@ Partial Class Form2
         Me.lblAnioEstreno = New System.Windows.Forms.Label()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.btnVender = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -127,11 +128,23 @@ Partial Class Form2
         Me.btnVender.Text = "Vender Entradas"
         Me.btnVender.UseVisualStyleBackColor = True
         '
+        'btnVolver
+        '
+        Me.btnVolver.AutoSize = True
+        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(724, 400)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(86, 38)
+        Me.btnVolver.TabIndex = 3
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(822, 450)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnVender)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
@@ -154,4 +167,5 @@ Partial Class Form2
     Friend WithEvents lblSinopsis As Label
     Friend WithEvents lblPrecio As Label
     Friend WithEvents btnVender As Button
+    Friend WithEvents btnVolver As Button
 End Class

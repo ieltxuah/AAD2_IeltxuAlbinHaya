@@ -19,4 +19,8 @@
         Dim ventaEntradas As New Form3(peli)
         ventaEntradas.ShowDialog()
     End Sub
+
+    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+        Me.Close()
+    End Sub
 End Class

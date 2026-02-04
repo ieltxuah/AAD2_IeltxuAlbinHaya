@@ -25,6 +25,7 @@ Partial Class Form3
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.btnVender = New System.Windows.Forms.Button()
         Me.cantEntradas = New System.Windows.Forms.NumericUpDown()
+        Me.btnVolver = New System.Windows.Forms.Button()
         CType(Me.cantEntradas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class Form3
         '
         Me.btnVender.AutoSize = True
         Me.btnVender.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVender.Location = New System.Drawing.Point(263, 169)
+        Me.btnVender.Location = New System.Drawing.Point(171, 171)
         Me.btnVender.Name = "btnVender"
         Me.btnVender.Size = New System.Drawing.Size(177, 51)
         Me.btnVender.TabIndex = 5
@@ -57,11 +58,23 @@ Partial Class Form3
         Me.cantEntradas.Size = New System.Drawing.Size(252, 34)
         Me.cantEntradas.TabIndex = 6
         '
+        'btnVolver
+        '
+        Me.btnVolver.AutoSize = True
+        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(369, 171)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(177, 51)
+        Me.btnVolver.TabIndex = 7
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(710, 288)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.cantEntradas)
         Me.Controls.Add(Me.btnVender)
         Me.Controls.Add(Me.lblTitulo)
@@ -76,4 +89,5 @@ Partial Class Form3
     Friend WithEvents lblTitulo As Label
     Friend WithEvents btnVender As Button
     Friend WithEvents cantEntradas As NumericUpDown
+    Friend WithEvents btnVolver As Button
 End Class

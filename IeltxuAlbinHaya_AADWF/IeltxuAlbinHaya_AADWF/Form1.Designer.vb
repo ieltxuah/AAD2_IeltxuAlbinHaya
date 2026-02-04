@@ -35,6 +35,7 @@ Partial Class Form1
         Me.lblSala3 = New System.Windows.Forms.Label()
         Me.lblSala4 = New System.Windows.Forms.Label()
         Me.lblSala5 = New System.Windows.Forms.Label()
+        Me.btnSalir = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,7 +107,7 @@ Partial Class Form1
         '
         Me.btnCreditos.AutoSize = True
         Me.btnCreditos.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreditos.Location = New System.Drawing.Point(825, 22)
+        Me.btnCreditos.Location = New System.Drawing.Point(689, 22)
         Me.btnCreditos.Name = "btnCreditos"
         Me.btnCreditos.Size = New System.Drawing.Size(177, 51)
         Me.btnCreditos.TabIndex = 6
@@ -163,11 +164,23 @@ Partial Class Form1
         Me.lblSala5.Text = "Sala 5 "
         Me.lblSala5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'btnSalir
+        '
+        Me.btnSalir.AutoSize = True
+        Me.btnSalir.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.Location = New System.Drawing.Point(891, 22)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(111, 51)
+        Me.btnSalir.TabIndex = 12
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1023, 408)
+        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.lblSala5)
         Me.Controls.Add(Me.lblSala4)
         Me.Controls.Add(Me.lblSala3)
@@ -204,4 +217,5 @@ Partial Class Form1
     Friend WithEvents lblSala3 As Label
     Friend WithEvents lblSala4 As Label
     Friend WithEvents lblSala5 As Label
+    Friend WithEvents btnSalir As Button
 End Class
