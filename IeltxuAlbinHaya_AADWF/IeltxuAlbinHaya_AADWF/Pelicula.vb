@@ -80,7 +80,8 @@
         If cantEntradas > 10 Then
             Return "No se pueden comprar más de diez entradas"
         Else
-            If Me.EntradasVendidas + cantEntradas < Me.EntradasDisponibles Then
+            If Me.EntradasVendidas + cantEntradas <= Me.EntradasDisponibles Then
+                Me.EntradasVendidas += cantEntradas
                 Return "Se puede comprar todas las entradas"
             Else
                 Return $"No pueden comprar todas las entradas, como máximo puedes comprar: {Me.EntradasDisponibles - EntradasVendidas}"
