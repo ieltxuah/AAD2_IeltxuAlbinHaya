@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="connString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;server=localhost;userid=root;password=root;database=CINE&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=localhost;userid=root;password=root;database=CINE</Value>
+    </Setting>
+    <Setting Name="githubAPIString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.github.com/users/ieltxuah</Value>
+    </Setting>
+    <Setting Name="githubToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">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</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
